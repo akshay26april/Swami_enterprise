@@ -1,0 +1,398 @@
+<!--
+====================================================
+  LAPTOP IT CARE — Full Header Section Replacement
+  Replaces: Topbar + Navbar + Hero Carousel
+  Drop this block in place of the existing sections
+  in index.html (and other pages as needed).
+====================================================
+-->
+
+<!-- ═══════════════════════════════════════════════
+     TOPBAR  (phone / email / social quick-links)
+     Mirrors the look seen in the screenshot:
+     teal background, white text, icons on right
+═══════════════════════════════════════════════ -->
+<div class="container-fluid topbar-lic px-4 px-lg-5 d-none d-lg-block">
+    <div class="row align-items-center" style="height:46px;">
+        <!-- Left: contact quick links -->
+        <div class="col-lg-7 d-flex align-items-center gap-4">
+            <a href="tel:+918929014453" class="topbar-lic-link">
+                <i class="fas fa-phone-alt me-2"></i>Call : +91 89290 14453
+            </a>
+            <a href="mailto:laptopitcare@gmail.com" class="topbar-lic-link">
+                <i class="fas fa-envelope me-2"></i>Email : laptopitcare@gmail.com
+            </a>
+            <a href="#" class="topbar-lic-link">
+                <i class="fas fa-map-marker-alt me-2"></i>Pune, Maharashtra
+            </a>
+        </div>
+        <!-- Right: social icons -->
+        <div class="col-lg-5 text-end d-flex align-items-center justify-content-end gap-2">
+            <span class="text-white-50 small me-1">Follow Us:</span>
+            <a href="#" class="topbar-social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="topbar-social"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="topbar-social"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="topbar-social"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="topbar-social"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     NAVBAR  (sticky, teal background)
+     Logo image on left, nav links + CTA on right
+═══════════════════════════════════════════════ -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-lic navbar-expand-lg px-4 px-lg-5 py-3 py-lg-0">
+
+        <!-- LOGO — replace img src with your actual logo file -->
+        <a href="index.html" class="navbar-brand p-0 d-flex align-items-center gap-2">
+            <!--
+                TO ADD YOUR LOGO:
+                Replace the <div class="logo-placeholder"> block below with:
+                <img src="img/logo.png" alt="Laptop IT Care Logo" height="48">
+            -->
+            <div class="logo-placeholder d-flex align-items-center justify-content-center">
+                <i class="fas fa-laptop me-2" style="font-size:1.4rem;color:#fff;"></i>
+                <span class="logo-text">Laptop <span class="logo-accent">IT</span> Care</span>
+            </div>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navCollapseLIC"
+                aria-controls="navCollapseLIC" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars text-white"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navCollapseLIC">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html"   class="nav-item nav-link active">Home</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="about.html"   class="nav-item nav-link">About</a>
+                <a href="blog.html"    class="nav-item nav-link">Blogs</a>
+
+                <!-- Pages dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="feature.html"     class="dropdown-item">Our Features</a>
+                        <a href="team.html"         class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html"  class="dropdown-item">Testimonials</a>
+                        <a href="offer.html"        class="dropdown-item">Our Offers</a>
+                        <a href="FAQ.html"          class="dropdown-item">FAQs</a>
+                        <a href="404.html"          class="dropdown-item">404 Page</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+            <a href="contact.html"
+               class="btn btn-lic-cta rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0 ms-lg-3">
+                Book a Repair
+            </a>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════
+         HERO CAROUSEL
+         Slide 1 — left-aligned text (desktop)
+         Slide 2 — center-aligned text
+    ══════════════════════════════════════════════ -->
+    <div class="header-carousel owl-carousel">
+
+        <!-- ── SLIDE 1 ── -->
+        <div class="header-carousel-item">
+            <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Laptop Repair Service">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row gy-0 gx-5">
+                        <div class="col-lg-0 col-xl-5"></div>
+                        <div class="col-xl-7 animated fadeInLeft">
+                            <div class="text-sm-center text-md-end">
+                                <h4 class="text-primary text-uppercase fw-bold mb-4">
+                                    Welcome To Laptop IT Care
+                                </h4>
+                                <h1 class="display-4 text-uppercase text-white mb-4">
+                                    Expert Laptop &amp; Computer Repair Services
+                                </h1>
+                                <p class="mb-5 fs-5">
+                                    We provide fast, reliable, and affordable repair solutions for all
+                                    laptop and desktop brands. Trusted by thousands of customers across Pune.
+                                </p>
+                                <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
+                                    <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#">
+                                        <i class="fas fa-play-circle me-2"></i> Watch Video
+                                    </a>
+                                    <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="about.html">
+                                        Learn More
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                                    <h2 class="text-white me-2">Follow Us:</h2>
+                                    <div class="d-flex justify-content-end ms-2">
+                                        <a class="btn btn-md-square btn-light rounded-circle me-2"  href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle mx-2"  href=""><i class="fab fa-instagram"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle mx-2"  href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle ms-2"  href=""><i class="fab fa-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── SLIDE 2 ── -->
+        <div class="header-carousel-item">
+            <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="IT Solutions Pune">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row g-5">
+                        <div class="col-12 animated fadeInUp">
+                            <div class="text-center">
+                                <h4 class="text-primary text-uppercase fw-bold mb-4">
+                                    Welcome To Laptop IT Care
+                                </h4>
+                                <h1 class="display-4 text-uppercase text-white mb-4">
+                                    Your Trusted IT Partner in Pune
+                                </h1>
+                                <p class="mb-5 fs-5">
+                                    From screen replacements and battery fixes to virus removal and data
+                                    recovery — our certified technicians have you covered, same day.
+                                </p>
+                                <div class="d-flex justify-content-center flex-shrink-0 mb-4">
+                                    <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#">
+                                        <i class="fas fa-play-circle me-2"></i> Watch Video
+                                    </a>
+                                    <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="contact.html">
+                                        Book a Repair
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <h2 class="text-white me-2">Follow Us:</h2>
+                                    <div class="d-flex justify-content-end ms-2">
+                                        <a class="btn btn-md-square btn-light rounded-circle me-2"  href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle mx-2"  href=""><i class="fab fa-instagram"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle mx-2"  href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle ms-2"  href=""><i class="fab fa-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /header-carousel -->
+
+    <!-- Floating WhatsApp / Call button (bottom-right) -->
+    <a href="tel:+918929014453"
+       class="btn-float-call d-flex align-items-center justify-content-center"
+       title="Call Us Now">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+</div><!-- /container-fluid position-relative -->
+
+
+<!--
+════════════════════════════════════════════════════════
+  CUSTOM CSS — paste inside your <style> tag or style.css
+  (Add ABOVE the existing /* Topbar *‌/ block)
+════════════════════════════════════════════════════════
+<style>
+-->
+<style>
+/* ──────────────────────────────────────────────
+   COLOR TOKENS  (override Bootstrap's --bs-primary
+   if you want the teal from the screenshot)
+────────────────────────────────────────────── */
+:root {
+    --lic-teal:        #1a7a8a;   /* main brand teal */
+    --lic-teal-dark:   #145f6e;   /* darker teal for hover */
+    --lic-orange:      #f06830;   /* accent / CTA orange  */
+    --lic-orange-dark: #d45520;
+}
+
+/* ──────────────────────────────────────────────
+   TOPBAR
+────────────────────────────────────────────── */
+.topbar-lic {
+    background: var(--lic-teal);
+}
+.topbar-lic-link {
+    color: rgba(255,255,255,.85);
+    text-decoration: none;
+    font-size: .85rem;
+    transition: color .2s;
+}
+.topbar-lic-link:hover { color: #fff; }
+.topbar-lic-link i { color: var(--lic-orange); }
+
+.topbar-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.12);
+    color: #fff;
+    font-size: .75rem;
+    text-decoration: none;
+    transition: background .25s, color .25s;
+}
+.topbar-social:hover {
+    background: var(--lic-orange);
+    color: #fff;
+}
+
+/* ──────────────────────────────────────────────
+   NAVBAR
+────────────────────────────────────────────── */
+.navbar-lic {
+    background: var(--lic-teal) !important;
+}
+.navbar-lic .nav-link {
+    color: rgba(255,255,255,.88) !important;
+    font-weight: 500;
+    padding: 28px 14px !important;
+    transition: color .2s;
+}
+.navbar-lic .nav-link:hover,
+.navbar-lic .nav-link.active {
+    color: #fff !important;
+}
+
+/* active underline accent */
+.navbar-lic .nav-link.active::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background: var(--lic-orange);
+    border-radius: 2px;
+    margin-top: 2px;
+}
+
+/* dropdown */
+.navbar-lic .dropdown-menu {
+    background: var(--lic-teal-dark);
+    border: none;
+    border-radius: 0 0 8px 8px;
+    padding: 0;
+}
+.navbar-lic .dropdown-item {
+    color: rgba(255,255,255,.85);
+    padding: 10px 20px;
+    font-size: .9rem;
+}
+.navbar-lic .dropdown-item:hover {
+    background: var(--lic-orange);
+    color: #fff;
+}
+.navbar-lic .dropdown-toggle::after {
+    color: rgba(255,255,255,.7);
+}
+
+/* CTA button */
+.btn-lic-cta {
+    background: var(--lic-orange);
+    color: #fff !important;
+    font-weight: 600;
+    border: none;
+    transition: background .25s, transform .15s;
+}
+.btn-lic-cta:hover {
+    background: var(--lic-orange-dark);
+    transform: translateY(-1px);
+}
+
+/* ──────────────────────────────────────────────
+   LOGO PLACEHOLDER
+   Remove / replace once real logo image is added
+────────────────────────────────────────────── */
+.logo-placeholder {
+    cursor: pointer;
+}
+.logo-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 1.35rem;
+    color: #fff;
+    letter-spacing: -.3px;
+}
+.logo-accent {
+    color: var(--lic-orange);
+}
+
+/* ──────────────────────────────────────────────
+   FLOATING CALL BUTTON  (bottom-right)
+────────────────────────────────────────────── */
+.btn-float-call {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    background: var(--lic-orange);
+    color: #fff;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 20px rgba(240,104,48,.45);
+    z-index: 9999;
+    text-decoration: none;
+    transition: background .25s, transform .2s, box-shadow .2s;
+    animation: pulse-call 2.4s infinite;
+}
+.btn-float-call:hover {
+    background: var(--lic-orange-dark);
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 6px 28px rgba(240,104,48,.55);
+}
+@keyframes pulse-call {
+    0%   { box-shadow: 0 0 0 0   rgba(240,104,48,.55); }
+    60%  { box-shadow: 0 0 0 14px rgba(240,104,48,0);  }
+    100% { box-shadow: 0 0 0 0   rgba(240,104,48,0);   }
+}
+
+/* ──────────────────────────────────────────────
+   MOBILE  (<992 px)
+────────────────────────────────────────────── */
+@media (max-width: 991.98px) {
+    .navbar-lic .nav-link { padding: 10px 0 !important; }
+    .navbar-lic .navbar-collapse {
+        background: var(--lic-teal-dark);
+        padding: 12px 20px;
+    }
+    .navbar-lic .dropdown-menu { border-radius: 0; }
+}
+</style>
+<!--
+  END CUSTOM CSS
+════════════════════════════════════════════════════════
+  HOW TO USE
+  ─────────────────────────────────────────────────────
+  1. Copy the <style> block into your <head> or style.css
+     (place it AFTER Bootstrap / style.css imports so it wins).
+
+  2. Replace the three existing blocks in index.html:
+       <!-- Topbar Start/End -->
+       <!-- Navbar & Hero Start -->   …down to the closing </div>
+       <!-- Carousel Start/End -->
+     …with THIS file's content (minus the <style> block
+     if you put CSS in style.css instead).
+
+  3. LOGO:
+     • Upload your logo image as  img/logo.png  (or any path).
+     • Inside the <a class="navbar-brand"> replace the
+       <div class="logo-placeholder">…</div>  with:
+           <img src="img/logo.png" alt="Laptop IT Care" height="48">
+
+  4. Contact details — update phone / email in both the
+     topbar AND the floating call button href.
+
+  5. All other pages (about.html, service.html, etc.) need
+     the same Topbar + Navbar replacement — copy & paste.
+════════════════════════════════════════════════════════
+-->
