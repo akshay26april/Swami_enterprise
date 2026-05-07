@@ -371,14 +371,25 @@
             margin: 10px;
         }
         .testimonial-item p { color: rgba(255,255,255,0.85); line-height: 1.7; }
-        .testimonial-item img {
-            width: 56px;
-            height: 56px;
+        .testi-avatar {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            min-height: 60px;
             border-radius: 50%;
-            object-fit: cover;
-            object-position: center top;
-            flex-shrink: 0;
+            overflow: hidden;
             border: 3px solid var(--accent);
+            flex-shrink: 0;
+            background: #ccc;
+        }
+        .testi-avatar img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            border-radius: 0 !important;
+            border: none !important;
         }
         .testimonial-item h5 { color: #fff; margin: 0; font-size: 15px; }
         .testimonial-item small { color: rgba(255,255,255,0.6); }
@@ -933,7 +944,7 @@
                     <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
                     <p class="mb-4">"My laptop screen was cracked and they fixed it within a day at a very reasonable price. Highly professional service — will definitely come back!"</p>
                     <div class="d-flex align-items-center gap-3">
-                        <img src="img/testimonial-1.jpg" alt="Client" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&q=80'">
+                        <div class="testi-avatar"><img src="img/testimonial-1.jpg" alt="Client" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&q=80'"></div>
                         <div>
                             <h5>Rahul Mehta</h5>
                             <small>Software Engineer, Pune</small>
@@ -947,7 +958,7 @@
                     <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
                     <p class="mb-4">"They installed CCTV cameras at my shop quickly and efficiently. The quality of work is excellent and the team was very cooperative throughout."</p>
                     <div class="d-flex align-items-center gap-3">
-                        <img src="img/testimonial-2.jpg" alt="Client" onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80'">
+                        <div class="testi-avatar"><img src="img/testimonial-2.jpg" alt="Client" onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80'"></div>
                         <div>
                             <h5>Sneha Joshi</h5>
                             <small>Business Owner, Pune</small>
@@ -961,7 +972,7 @@
                     <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
                     <p class="mb-4">"Data recovery service was excellent. Thought I had lost years of important data but they recovered everything. Truly lifesavers — thank you!"</p>
                     <div class="d-flex align-items-center gap-3">
-                        <img src="img/testimonial-3.jpg" alt="Client" onerror="this.src='https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100&q=80'">
+                        <div class="testi-avatar"><img src="img/testimonial-3.jpg" alt="Client" onerror="this.src='https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100&q=80'"></div>
                         <div>
                             <h5>Aakash Verma</h5>
                             <small>Freelancer, Pune</small>
@@ -975,7 +986,7 @@
                     <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
                     <p class="mb-4">"The AMC contract for our office is handled very professionally. All computers are maintained on time and any issue is resolved immediately."</p>
                     <div class="d-flex align-items-center gap-3">
-                        <img src="img/testimonial-1.jpg" alt="Client" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80'">
+                        <div class="testi-avatar"><img src="img/testimonial-1.jpg" alt="Client" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80'"></div>
                         <div>
                             <h5>Vijay Kulkarni</h5>
                             <small>Office Manager, Pune</small>
